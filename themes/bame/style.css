@@ -1,0 +1,71 @@
+/*
+Theme Name: Bame
+Theme URI: https://wordpress.themeholy.com/bame/
+Author: Themeholy
+Author URI: https://themeforest.net/user/themeholy 
+Description: Bame - Esports & Gaming WordPress Theme  
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: bame
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* Header sub-menu icon */
+
+.hide-icon.main-menu ul.sub-menu li a:before {
+    display: none;
+}
+
+.hide-icon.main-menu ul.sub-menu li a:hover {
+    padding-left: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--body-color);
+    line-height: 26px;
+    overflow-x: hidden;
+    background: var(--th-body-background);
+    -webkit-font-smoothing: antialiased;
+    cursor: auto;
+    /***scroll-bar***/
+}
+
+body:has(.cursor-image) {
+    cursor: url("./assets/img/cursor.svg"), auto;
+}
+
+.cursor-animation {
+    position: fixed;
+    background: var(--theme-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    z-index: 999999;
+    -webkit-transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    transition: 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-transform: translate(2px, 2px);
+    -ms-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+    mix-blend-mode: exclusion;
+}
+
+@media (max-width: 1399px) {
+    .hero-cta-slider1 .hero-shape-area .hero-bg-shape .hero-bg-border-anime {
+        display: none;
+    }
+}
